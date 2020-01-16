@@ -21,16 +21,16 @@ apt-get install -y libsm6 libxext6 libxrender-dev
 #export CPATH="/home/work/cuda-9.2/include"
 #export CUDNN_INCLUDE_DIR="/home/work/cudnn/cudnn_v7/include"
 #export CUDNN_LIB_DIR="/home/work/cudnn/cudnn_v7/lib64"
-TORCH=$(python -c "import os; import torch; print(os.path.dirname(torch.__file__))")
+TORCH=$(python -c "import os; import torch; print(os.path.dirname(torch.__file__))") || TORCH=$(python3 -c "import os; import torch; print(os.path.dirname(torch.__file__))")
 #echo $TORCH
 cd libs/GANet
-python setup.py clean
+python setup.py clean || python3 setup.py clean
 rm -rf build
-python setup.py build
+python setup.py build || python3 setup.py build
 cp -r build/lib* build/lib
 
 cd ../sync_bn
-python setup.py clean
+python setup.py clean || python3 setup.py clean
 rm -rf build
-python setup.py build
+python setup.py build || python3 setup.py build
 cp -r build/lib* build/lib
