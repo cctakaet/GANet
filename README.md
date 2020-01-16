@@ -20,7 +20,7 @@ Requirements
 
 # Compile
 
-      sh compile.sh
+    sh compile.sh
 Download pre-trained weight and compile
 
 # Run
