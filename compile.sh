@@ -1,3 +1,15 @@
+mkdir result
+mkdir result/Synthetic
+mkdir result/Real
+mkdir checkpoint
+wget --no-check-certificate "https://onedrive.live.com/download?cid=F80778D80179676E&resid=F80778D80179676E%211349&authkey=AJOnXyDTUNZTeXI" -O checkpoint/kitti2015_final.pth
+apt-get update
+apt-get install -y libsm6 libxext6 libxrender-dev
+
+pip install torch torchvision
+pip install scikit-image
+pip install opencv-python==3.4.2.17 opencv-contrib-python==3.4.2.17
+
 #export LD_LIBRARY_PATH="/home/feihu/anaconda3/lib:$LD_LIBRARY_PATH"
 #export LD_INCLUDE_PATH="/home/feihu/anaconda3/include:$LD_INCLUDE_PATH"
 #export CUDA_HOME="/usr/local/cuda-10.0"
