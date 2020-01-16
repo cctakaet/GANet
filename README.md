@@ -18,7 +18,8 @@ Requirements
 * pip install scikit-image
 * pip install opencv-python\==3.4.2.17 opencv-contrib-python==3.4.2.17
 
->sh compile.sh
+
+      sh compile.sh
 
 # Run
 With GPU:
@@ -27,10 +28,10 @@ python main.py --input-left="./data/Synthetic/TL0.png" --input-right="./data/Syn
 Without GPU
 python main.py --input-left="./data/Synthetic/TL0.png" --input-right="./data/Synthetic/TR0.png" --output="./result/Synthetic/TL0.pfm" --cuda False
 
-* -\-input-left <path to left image>
-* -\-input-right <path to right image>
-* -\-output <path to output PFM file>
-* -\-cuda <use GPU or not>
+* -\-input-left "path to left image"
+* -\-input-right "path to right image"
+* -\-output "path to output PFM file"
+* -\-cuda use GPU or not (default=True)
 
 
 ## Reference:
