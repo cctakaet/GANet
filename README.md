@@ -25,9 +25,11 @@ Download pre-trained weight and compile
 
 # Run
 With GPU:
+
 python main.py --input-left="./data/Synthetic/TL0.png" --input-right="./data/Synthetic/TR0.png" --output="./result/Synthetic/TL0.pfm"
 
-Without GPU
+Without GPU:
+
 python main.py --input-left="./data/Synthetic/TL0.png" --input-right="./data/Synthetic/TR0.png" --output="./result/Synthetic/TL0.pfm" --cuda False
 
 * -\-input-left "path to left image"
