@@ -4,22 +4,24 @@
 
 # Building Environment
 gcc: >= 5.3
+
 GPU memory: >= 6.5G (for testing)
+
 Pytorch: >= 1.0
+
 **Cuda: >=9.2** 
+
 My platform/settings: ubuntu 18.04 + cuda 10.1 + python 3.6
-
-# Compile
-
-Make sure command python works, don't run with command python3.
 
 Requirements
 * pip install torch torchvision
 * pip install scikit-image
 * pip install opencv-python\==3.4.2.17 opencv-contrib-python==3.4.2.17
 
+# Compile
 
       sh compile.sh
+Download pre-trained weight and compile
 
 # Run
 With GPU:
